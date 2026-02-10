@@ -29,7 +29,7 @@ class Waifu extends StatelessWidget {
     child: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Image(image: AssetImage('lib/assets/ram.jpeg'),
+        Image(image: AssetImage('lib/assets/rikka.jpeg'),
         height: 300
         
         ),
