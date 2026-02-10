@@ -75,17 +75,27 @@ class waifuAPI extends StatefulWidget {
   @override
   State<waifuAPI> createState() => _waifuAPIState();
 }
+ 
+ String apiUrl = "https://api.waifu.pics/sfw/waifu";
 
 class _waifuAPIState extends State<waifuAPI> {
 
   
-  String apiUrl = "https://api.waifu.pics/sfw/waifu";
-
+ 
 
   @override
   Widget build(BuildContext context) {
+    
     return Container(
-      child: 
+    alignment: Alignment.center,
+      child: Column(
+        children: [
+          _pic(),
+          _button
+        ],
+      )
+
+      
 
     );
   }
@@ -99,5 +109,21 @@ final response = await http.get(Uri.parse(waifuApiUrl));
 final Map<String, dynamic> data = jsonDecode(response.body);
 final String url = data['url'];
 
-return url;
+return apiUrl = url;
+}
+
+Widget _pic(){
+  return Container(
+    alignment: Alignment.center,
+    child: Image(image: AssetImage("lib/assets/ram")),
+  );
+}
+Widget _button(){
+  return Container(
+    alignment: Alignment.center,
+    child: ElevatedButton(
+      onPressed: fetchWaifu, 
+      child: Text("New Waifu")
+    )
+  );
 }

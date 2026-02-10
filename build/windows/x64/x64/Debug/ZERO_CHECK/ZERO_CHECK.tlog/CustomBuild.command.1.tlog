@@ -1,0 +1,10 @@
+^C:\USERS\PATRI\DESKTOP\WAIFU\BUILD\WINDOWS\X64\CMAKEFILES\9FA4EB1B77AF858305BC633C7DFE8EAB\GENERATE.STAMP.RULE
+setlocal
+"E:\Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/patri/Desktop/Waifu/windows -BC:/Users/patri/Desktop/Waifu/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/patri/Desktop/Waifu/build/windows/x64/waifu.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
