@@ -1,0 +1,10 @@
+^C:\USERS\PATRI\DESKTOP\WAIFU\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"E:\Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/patri/Desktop/Waifu/windows -BC:/Users/patri/Desktop/Waifu/build/windows/x64 --check-stamp-file C:/Users/patri/Desktop/Waifu/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

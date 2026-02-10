@@ -1,0 +1,10 @@
+^C:\USERS\PATRI\DESKTOP\WAIFU\BUILD\WINDOWS\X64\CMAKEFILES\9FA4EB1B77AF858305BC633C7DFE8EAB\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
