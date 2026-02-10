@@ -4,5 +4,10 @@
 <dict>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
+
+<!-- For Api Fetching/ Internet-->
+	<key>com.apple.security.network.client</key>
+	<true/> 
+
 </dict>
 </plist>

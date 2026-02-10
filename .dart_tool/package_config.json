@@ -104,6 +104,18 @@
       "languageVersion": "3.8"
     },
     {
+      "name": "http",
+      "rootUri": "file:///C:/Users/patri/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///C:/Users/patri/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "image",
       "rootUri": "file:///C:/Users/patri/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.7.2",
       "packageUri": "lib/",
@@ -234,6 +246,12 @@
       "rootUri": "file:///C:/Users/patri/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-15.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.5"
+    },
+    {
+      "name": "web",
+      "rootUri": "file:///C:/Users/patri/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "xml",
