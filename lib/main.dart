@@ -1,5 +1,9 @@
 
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
 
 void main(){
  runApp(Waifu());
@@ -23,21 +27,16 @@ class Waifu extends StatelessWidget {
         backgroundColor: Colors.lightBlueAccent,
         
       ),
-     body: Container(
-  color: const Color.fromRGBO(255, 193, 7, 1),
-  child: Center(
-    child: Column(
-      mainAxisSize: MainAxisSize.min,
+<<<<<<< Updated upstream
+     body: Column(
       children: [
-        Image(image: AssetImage('lib/assets/rikka.jpeg'),
-        height: 300
-        
-        ),
-        Text("Button"),
+
       ],
-    ),
-  ),
-),
+     ) 
+=======
+     body: Image()
+>>>>>>> Stashed changes
+     ,
 bottomNavigationBar: BottomAppBar(
   color: Colors.blueAccent,
   child: Container(
@@ -55,12 +54,7 @@ bottomNavigationBar: BottomAppBar(
   ),
   
 ),      
-       
-      
-      
-      
-      
-    ));
+ ));
     
     
   }
@@ -79,4 +73,60 @@ Widget _navItem (String text) {
         style: TextStyle(color: Colors.pink),        
       ),
   );
+}
+
+<<<<<<< Updated upstream
+class waifuAPI extends StatefulWidget {
+  const waifuAPI({super.key});
+
+  @override
+  State<waifuAPI> createState() => _waifuAPIState();
+}
+
+class _waifuAPIState extends State<waifuAPI> {
+
+  
+  String apiUrl = "https://api.waifu.pics/sfw/waifu";
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: 
+
+    );
+  }
+}
+
+Future<String> fetchWaifu() async{
+
+const String waifuApiUrl = "https://api.waifu.pics/sfw/waifu";
+
+final response = await http.get(Uri.parse(waifuApiUrl));
+final Map<String, dynamic> data = jsonDecode(response.body);
+final String url = data['url'];
+
+return url;
+
+
+  
+
+=======
+class Image extends StatefulWidget {
+  const Image({super.key});
+
+  @override
+  State<Image> createState() => _ImageState();
+}
+
+class _ImageState extends State<Image> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+        child: Image(key: Key("lib/assets/rikka.jpeg")),
+      ),
+    );
+  }
+>>>>>>> Stashed changes
 }
