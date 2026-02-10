@@ -1,5 +1,6 @@
 C:/Users/patri/Desktop/Waifu/build/windows/x64/runner/Debug/data/icudtl.dat
 C:/Users/patri/Desktop/Waifu/build/windows/x64/runner/Debug/flutter_windows.dll
+C:/Users/patri/Desktop/Waifu/build/windows/x64/runner/Debug/native_assets.json
 C:/Users/patri/Desktop/Waifu/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
 C:/Users/patri/Desktop/Waifu/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
 C:/Users/patri/Desktop/Waifu/build/windows/x64/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
