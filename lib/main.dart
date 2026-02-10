@@ -28,6 +28,7 @@ class Waifu extends StatelessWidget {
         
       ),
 body: Container(
+  child: waifuAPI(),
   
 )
      ,
@@ -74,13 +75,34 @@ class waifuAPI extends StatefulWidget {
 
   @override
   State<waifuAPI> createState() => _waifuAPIState();
+
+
+
+
+
+
+
+
+
+
 }
  
- String apiUrl = "https://api.waifu.pics/sfw/waifu";
+ 
 
 class _waifuAPIState extends State<waifuAPI> {
+String apiUrl = "https://api.waifu.pics/sfw/waifu";
 
-  
+Future<void> fetchWaifu() async{
+
+const String waifuApiUrl = "https://api.waifu.pics/sfw/waifu";
+
+final response = await http.get(Uri.parse(waifuApiUrl));
+final Map<String, dynamic> data = jsonDecode(response.body);
+final String url = data['url'];
+setState(() {
+  apiUrl = url;
+});
+}
  
 
   @override
@@ -89,9 +111,10 @@ class _waifuAPIState extends State<waifuAPI> {
     return Container(
     alignment: Alignment.center,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           _pic(),
-          _button
+          _button()
         ],
       )
 
@@ -99,23 +122,15 @@ class _waifuAPIState extends State<waifuAPI> {
 
     );
   }
-}
 
-Future<String> fetchWaifu() async{
 
-const String waifuApiUrl = "https://api.waifu.pics/sfw/waifu";
 
-final response = await http.get(Uri.parse(waifuApiUrl));
-final Map<String, dynamic> data = jsonDecode(response.body);
-final String url = data['url'];
-
-return apiUrl = url;
-}
 
 Widget _pic(){
   return Container(
+    height: 300,
     alignment: Alignment.center,
-    child: Image(image: AssetImage("lib/assets/ram")),
+    child: Image.network(apiUrl),
   );
 }
 Widget _button(){
@@ -126,4 +141,6 @@ Widget _button(){
       child: Text("New Waifu")
     )
   );
+}
+
 }
