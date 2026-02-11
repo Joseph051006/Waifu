@@ -1,7 +1,14 @@
 {
   "source" : "ExtractedAppShortcutsMetadata",
+  "source" : "ExtractedAppShortcutsMetadata",
   "version" : 1,
   "tables" : {
 
+  },
+<<<<<<< Updated upstream
+  "source" : "ExtractedAppShortcutsMetadata",
+=======
+>>>>>>> Stashed changes
+  "version" : 1
   }
 }

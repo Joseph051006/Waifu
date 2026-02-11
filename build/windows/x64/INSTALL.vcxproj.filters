@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\patri\Desktop\Waifu\build\windows\x64\CMakeFiles\9fa4eb1b77af858305bc633c7dfe8eab\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1DC712C4-F175-3079-BB1D-46AD4E16508D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

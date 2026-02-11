@@ -1,0 +1,28 @@
+^C:\USERS\PATRI\DESKTOP\WAIFU\BUILD\WINDOWS\X64\CMAKEFILES\821ABF3E3F26EB4DA8D4830906F3BFEE\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"E:\Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\patri\flutter PROJECT_DIR=C:\Users\patri\Desktop\Waifu FLUTTER_ROOT=C:\Users\patri\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\patri\Desktop\Waifu\windows\flutter\ephemeral PROJECT_DIR=C:\Users\patri\Desktop\Waifu FLUTTER_TARGET=C:\Users\patri\Desktop\Waifu\lib\main.dart DART_DEFINES=RkxVVFRFUl9WRVJTSU9OPTMuMzguNw==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049M2I2MmVmYzJhMw==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049NzhmYzMwMTJlNA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMC43 DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\patri\Desktop\Waifu\.dart_tool\package_config.json C:/Users/patri/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PATRI\DESKTOP\WAIFU\BUILD\WINDOWS\X64\CMAKEFILES\00F20A1CFB244B86455BD07D45465D7A\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PATRI\DESKTOP\WAIFU\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"E:\Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/patri/Desktop/Waifu/windows -BC:/Users/patri/Desktop/Waifu/build/windows/x64 --check-stamp-file C:/Users/patri/Desktop/Waifu/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
