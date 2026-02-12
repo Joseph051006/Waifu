@@ -1,0 +1,1 @@
+ /Users/pyzile/Desktop/Projekte/Flutter/Waifu/.dart_tool/flutter_build/c218275f8c8644d2d945bd9f40722575/native_assets.json: 
