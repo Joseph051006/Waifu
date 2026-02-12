@@ -13,6 +13,5 @@ lib/
 │    
 └── widgets/                 # Reusable UI components (The "Dumb" widgets)
     ├── buttons/             # Custom buttons
-    ├── inputs/              # Custom text fields
-    └── feedback/            # Custom dialogs or snackbars
+    └── functions            # Functions
 ```
