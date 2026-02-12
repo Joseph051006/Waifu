@@ -1,4 +1,4 @@
-# Structur
+# Structure
 
 ```
 lib/
