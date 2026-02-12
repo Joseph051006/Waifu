@@ -65,8 +65,8 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
   assets:
-    - lib/assets/ram.jpeg
-    - lib/assets/rikka.jpeg
+    - lib/core/assets/ram.jpeg
+    - lib/core/assets/rikka.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
