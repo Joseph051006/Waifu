@@ -1,5 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/Users/patri/Desktop/Waifu/windows",
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -10,6 +9,5 @@
         "**/Flutter/ephemeral": true,
         "**/.symlinks": true,
         "**/.plugin_symlinks": true
-    },
-    "hide-files.files": []
+    }
 }
