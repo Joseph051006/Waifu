@@ -1,4 +1,6 @@
-# Structure
+# Structur
+
+```
 lib/
 ├── main.dart                # Entry point of the app
 ├── app.dart                 # Global theme, routing, and localization setup
@@ -24,3 +26,4 @@ lib/
     ├── buttons/             # Custom buttons
     ├── inputs/              # Custom text fields
     └── feedback/            # Custom dialogs or snackbars
+```
