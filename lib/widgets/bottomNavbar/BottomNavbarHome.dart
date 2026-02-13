@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Bottomnavbarhome extends StatefulWidget {
+class Bottomnavbarhome extends StatelessWidget {
   const Bottomnavbarhome({super.key});
 
-  @override
-  State<Bottomnavbarhome> createState() => _BottomnavbarhomeState();
-}
-
-class _BottomnavbarhomeState extends State<Bottomnavbarhome> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
@@ -37,4 +32,5 @@ Widget _navItem(String text) {
     ),
     child: Text(text, style: TextStyle(color: Colors.pink)),
   );
+
 }
