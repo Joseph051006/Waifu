@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:Waifu/widgets/buttons/ButtonDownloadWaifu.dart';
 
 class Bottomnavbarhome extends StatelessWidget {
   const Bottomnavbarhome({super.key});
@@ -12,7 +13,7 @@ class Bottomnavbarhome extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            _navItem("Download"),
+            Buttondownloadwaifu(),
             _navItem("Home"),
             _navItem("Settings"),
           ],

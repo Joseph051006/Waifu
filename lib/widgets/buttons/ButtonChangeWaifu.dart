@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
+String apiUrl = "https://api.waifu.pics/sfw/waifu";
+
 class ChangeWaifu extends StatefulWidget {
   const ChangeWaifu({super.key});
   @override
@@ -35,7 +37,7 @@ class _ChangeWaifuState extends State<ChangeWaifu> {
     );
   }
 
-  String apiUrl = "https://api.waifu.pics/sfw/waifu";
+  
 
   Future<void> fetchWaifu() async {
     const String waifuApiUrl = "https://api.waifu.pics/sfw/waifu";
