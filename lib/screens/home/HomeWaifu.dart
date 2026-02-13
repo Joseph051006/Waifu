@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:Waifu/widgets/buttons/ButtonChangeWaifu.dart';
 import 'package:Waifu/widgets/bottomNavbar/BottomNavbarHome.dart';
+import 'package:Waifu/widgets/appbar/AppBarHome.dart';
 
 class HomeWaifu extends StatelessWidget {
   const HomeWaifu({super.key});
@@ -9,16 +10,9 @@ class HomeWaifu extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Center(
-            child: Text(
-              "Welcome to your lovely Waifu app",
-              style: TextStyle(color: Colors.pink, fontStyle: FontStyle.italic),
-            ),
-          ),
-          backgroundColor: Colors.lightBlueAccent,
-        ),
-        body: Container(child: ChangeWaifu()),
+        appBar: AppBarHome(),
+        body: Container(
+          child: ChangeWaifu()),
         bottomNavigationBar: Bottomnavbarhome(),
       ),
     );
